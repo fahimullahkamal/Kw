@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./image/fiv-icon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Kw</title>
+    <style>
+            body{
+            background-image: url("./image/ExaMbACK.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: contain;
+        }
+
+label{
+    color: orangered;
+    right: 74px;
+    position: fixed;
+    top: 13px;
+}
+
+
+
+#title h1{
+    font-family:'Courier New', Courier, monospace;
+    text-align: left;
+    position: absolute;
+    color: #08033b;
+}
+#title h1 B{
+    text-align: left;
+    position: absolute;
+    top: 2px;
+    color: #f33303;
+}
+
+
+        /*--------------*/
+        #address{
+            position: fixed;
+            top: 0%;
+            left: 9vw;
+            color: rgb(255, 94, 0);
+
+        }
+        #upload #upbtn{
+            color: blue;
+            font-size: 19px;
+        }
+        #upload form{
+            display: none;
+        }
+        #upload:hover form{
+            display: block;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        #sec1 div{
+            position: sticky;
+            text-align: center;
+            color: white;
+            width: 30vw;
+            height: fit-content;
+            
+
+        }
+        #sec1 div #d1{
+            padding: 3px;
+            position: absolute;
+            max-width: 80px;
+            left: 0vw;
+            max-height: 100px;
+            background-color: rgb(7, 47, 107);
+            display: inline;
+            border-radius: 10px;
+        
+        }
+
+        #sec1 div #d1:hover{
+            width: 110px;
+            border: solid orangered 1px;
+            height: 110px;
+        }
+        #sec1 div #d2{
+            padding: 3px;
+            position: absolute;
+            left: 89px;
+            max-width: 80px;
+            max-height: 100px;
+            background-color: rgb(7, 47, 107);
+            display: inline;
+            border-radius: 10px;
+        
+        }
+        #sec1 div #d2:hover{
+            border: solid orangered 1px;
+            width: 110px;
+            height: 110px;
+        }
+        #sec1 div #d3{
+            margin-right: 15px;
+            padding: 3px;
+            position: absolute;
+            left: 179px;
+            max-width: 80px;
+            max-height: 100px;
+            background-color: rgb(7, 47, 107);
+            display: inline;
+            border-radius: 10px;
+        }
+        #sec1 div #d3:hover{
+            border: solid orangered 1px;
+            width: 110px;
+            height: 110px;
+        }
+        #ttext{
+            font-size: 20px;
+            color: rgb(3, 10, 71);
+            font-family: fantasy,sans-serif,'Times New Roman', Times, serif;
+        }
+        #sec2 ul li{
+            color: orangered;
+        }
+        #sec4 img:active{
+            height: 140px;
+        }
+        table{
+            display: block;
+            margin: 0 auto;
+            font-size: 1.3vw;
+            text-align: center;
+            border-collapse: collapse;
+            border: 1px rgb(16, 3, 63);
+        }
+        table thead{
+            background-color: rgb(3, 3, 51);
+            color: white;
+            border: white;
+        }
+        table th{
+            padding: 3px;
+        }
+        table td{
+            padding:2;
+        }
+        table #himarks{
+            background-color:rgba(3, 3, 51, 0.219);
+            color: rgb(3, 2, 61);
+           
+        }
+        table #totalmarks{
+            background-color: rgba(6, 86, 233, 0.363);
+            color: rgb(3, 3, 51);
+        }
+        #topper{
+            color: orangered;
+            
+        }
+        #topper b{
+            color: rgb(3,3,51);
+        }
+        #lowmark{
+            color: red;
+        }
+        #stname{
+            text-align: left;
+        }
+footer{
+    top: 150%;
+}
+
+    </style>
+</head>
+<body>
+
+
+    <main>
+      <!-- <section id="sec1">
+            <p id="ttext">شقه</p>
+            <div>
+                <a href="./marks/1.jpg" title="Web_Engineering" target="_blank"><div id="d1">
+                    <p>lectcher 1</p>
+                   <img style="max-width: 70px;" src="./" alt="">
+                </div></a>
+                <div id="d2">
+                    <p>lectcher 2</p>
+                    <img style="max-width: 70px;" src="./image/hacker-pc-computer-codes.jpg" alt="">
+                </div>
+                <div id="d3">
+                    <p>lectcher 3</p>
+                    <img style="max-width: 70px;" src="./image/jj.jpg" alt="">
+                </div>
+            </div>
+        </section>--> 
+        
+        <section id="sec2">
+            <p id="ttext">20% Exam Resolte:</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>#ID Number</th>
+                        <th>Student Name</th>
+                        <th>Web Design</th>
+                        <th>OOP2</th>
+                        <th>Probability</th>
+                        <th>DLD</th>
+                        <th>Data communication</th>
+                        <th>RDBMS</th>
+                        <th>ادیان ومذاهب</th>
+                        <th>تربیت فکری</th>
+                        <th>Total marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="AddSearch"><!-- baryali Scores-->
+                        <td>301-2204-000</td>
+                        <td id="stname">Baryali</td>
+                        <td id="himarks">20</td>
+                        <td>17</td>
+                        <td id="lowmark">3</td>
+                        <td id="lowmark">5</td>
+                        <td>18</td>
+                        <td>-- r</td>
+                        <td>0</td>
+                        <td>-- s</td>
+                        <td id="totalmarks">63</td>
+                    </tr>
+                    <tr class="AddSearch"><!-- mujibrahman Scores-->
+                        <td>301-2204-000</td>
+                        <td id="stname">Mujib Rahman</td>
+                        <td>--</td>
+                        <td>17</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td id="lowmark">6</td>
+                        <td>8</td>
+                        <td>0</td>
+                        <td>-- s</td>
+                        <td id="totalmarks">31</td>
+                    </tr>
+                    <tr class="AddSearch"><!-- muhammad idriss Scores-->
+                        <td>301-2204-000</td>
+                        <td id="stname">Muhammad idres</td>
+                        <td>17</td>
+                        <td>15</td>
+                        <td id="lowmark">11</td>
+                        <td id="lowmark">7</td>
+                        <td>14</td>
+                        <td>-- r</td>
+                        <td>19</td>
+                        <td id="himarks">20</td>
+                        <td id="totalmarks">103</td>
+                    </tr>
+                    <tr class="AddSearch"><!-- fahimullah kamal Scores-->
+                        <td>301-2204-005</td>
+                        <td id="stname">Fahimullah kamal</td>
+                        <td id="himarks">20</td>
+                        <td id="himarks">20</td>
+                        <td>14</td>
+                        <td id="himarks">18</td>
+                        <td>14</td>
+                        <td>18</td>
+                        <td id="himarks">20</td>
+                        <td>17</td>
+                        <td id="totalmarks"><b>141</b></td>
+                    </tr>
+                    <tr class="AddSearch"><!-- masehullah Scores-->
+                        <td>301-2204-000</td>
+                        <td id="stname">Masehullah</td>
+                        <td>17</td>
+                        <td id="himarks">20</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>18</td>
+                        <td>15</td>
+                        <td>19</td>
+                        <td id="himarks">20</td>
+                        <td id="totalmarks"><b>139</b></td>
+                    </tr>
+                    <tr class="AddSearch"><!-- farid Scores-->
+                        <td>301-2204-000</td>
+                        <td id="stname">Faridullah</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>0</td>
+                        <td>--</td>
+                        <td id="totalmarks">0</td>
+                    </tr>
+                    <tr class="AddSearch"><!-- mustafa Scores-->
+                        <td>301-2204-000</td>
+                        <td id="stname">Mustafa</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>14</td>
+                        <td>0</td>
+                        <td>--</td>
+                        <td id="totalmarks">14</td>
+                    </tr>
+                    <tr class="AddSearch"><!-- ajmal Scores-->
+                        <td>301-2204-000</td>
+                        <td id="stname">Mohammad Ajmal</td>
+                        <td id="lowmark">10</td>
+                        <td id="lowmark">2</td>
+                        <td id="lowmark">9</td>
+                        <td id="lowmark">7</td>
+                        <td>--</td>
+                        <td>6</td>
+                        <td>14</td>
+                        <td>--</td>
+                        <td id="totalmarks">48</td>
+                    </tr>
+                    <tr class="AddSearch"><!-- Jundullah Scores-->
+                        <td>301-2204-006</td>
+                        <td id="stname">Jundullah</td>
+                        <td id="himarks">20</td>
+                        <td id="himarks">20</td>
+                        <td>17</td>
+                        <td>15</td>
+                        <td id="himarks">19</td>
+                        <td id="himarks">20</td>
+                        <td>19</td>
+                        <td id="himarks">20</td>
+                        <td id="totalmarks"><b>150</b></td>
+                    </tr>
+                    <tr class="AddSearch"><!-- sed jamshid Scores-->
+                        <td>301-2204-000</td>
+                        <td id="stname">Sed jamshid</td>
+                        <td>0</td>
+                        <td id="lowmark">2</td>
+                        <td id="lowmark">10</td>
+                        <td id="lowmark">5</td>
+                        <td>0</td>
+                        <td>12</td>
+                        <td>17</td>
+                        <td>17</td>
+                        <td id="totalmarks">63</td>
+                    </tr>
+                    <tr class="AddSearch"><!-- umaid khan Scores-->
+                        <td>301-2204-000</td>
+                        <td id="stname">Omid Khan</td>
+                        <td id="himarks">20</td>
+                        <td>14</td>
+                        <td id="himarks">18</td>
+                        <td>14</td>
+                        <td id="himarks">19</td>
+                        <td id="himarks">20</td>
+                        <td id="himarks">20</td>
+                        <td>19</td>
+                        <td id="totalmarks"><b>144</b></td>
+                    </tr>
+                    <tr class="AddSearch"><!-- shkil ahmad Scores-->
+                        <td>301-2204-000</td>
+                        <td id="stname">Shakil Ahmad</td>
+                        <td>12</td>
+                        <td id="lowmark">2</td>
+                        <td>13</td>
+                        <td id="lowmark">8</td>
+                        <td>14</td>
+                        <td>17</td>
+                        <td>19</td>
+                        <td>18</td>
+                        <td id="totalmarks">103</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p id="topper" class="AddSearch"><b>First:</b> Jundullah Sultan</p>
+            <p id="topper" class="AddSearch"><b>Second:</b> Fahimullah Kamal</p>
+            <p id="topper" class="AddSearch"><b>Third:</b> --</p>
+            </section>
+        <SECtion>
+            <hr>
+            <p>Oregnal files of exam resolte</p>
+        <pre><a href="">Web Design Resolte</a>    <a href="">DLE Resolte</a> <br><a href="">OOP2 Resolte</a>     <a href="">Probability Resolte</a>  <br><a href="">data communication Resolte</a>     <a href="">Rdbms Resolte</a></pre>    
+        <address style="color: #868788;">date: 1402/8/16</address>
+    </SECtion>
+       <!-- <section id="sec3">
+            <p id="ttext">Assignment</p>
+            <div id="upload">
+                <p id="upbtn">Upload Your Assignment</p>
+                <form action="">
+                    <input type="text" value="inter your name" name="fname" id="fname">
+                    <input type="file" name="file name" id="inputfile">
+                </form>
+            </div>
+
+            <p><b>Assignment Number:1 </b> <br> Date:2023/10/04<br>make table and 3 column in table.</p>
+            <p>create database</p>
+        </section>
+        <section id="sec4">
+            <p id="ttext">Notes</p>
+            <p>date: 2023-10-4</p>
+            <p>Insert notes:</p>
+            <a href="./image/notes/IMG-20220411-WA0002.jpg" target="_blank"><img height="120px" src="./image/notes/IMG-20220411-WA0002.jpg" alt=""></a>
+            <a href="./image/notes/IMG-20220416-WA0000.jpg" target="_blank"><img height="120px" src="./image/notes/IMG-20220416-WA0000.jpg" alt=""></a>
+        </section>-->
+        <br><br><br>
+        <script src="./js.js"></script> 
+    </main>
+
+    
+    <header>
+        <p id="address"><b>University lessons</b></p>
+        <ul>
+            <a href="./index.html"><li title="Go back" id="backbtn"><b><</b></li></a>
+            <li><pre>  </pre></li>
+            <a href="./index.html"><li>Home</li></a>
+            <li><pre>  </pre></li>
+            <a href=""><li>News</li></a>
+            <li><pre>  </pre></li>
+            <a href="#footer"><li>Follow Me</li></a>
+            <li><pre>  </pre></li>
+            <input onkeyup="SearchAll()" name="search" placeholder="Search.." id="searchbar" type="search" title="search">
+
+        </ul>
+    </header>
+    
+    <!--<label form="btn">Darck mode</label>
+    <div id="modebottun" class="btn">
+        <a href="#"><div id="onbottun"><p>0</p></div></a>
+    </div>-->
+    <div id="title"><h1 id="titleofpage"><b>K</b>w</h1></div>
+    <footer id="footer">
+        <span>
+            <p>Contact Us</p>
+            <section id="spimg">
+                <img src="./ICON/FACEBOOK.png" alt="facebook">
+                <img src="./ICON/WHATSAPP.png" alt="Whatsapp">
+                <img src="./ICON/LOCATION.png" alt="Location">
+            </section>
+            <p id="info">Fahimullah kamal<br>0093 78 22 717 52 <br><a style="color: white;" target="_blank" href="http::\\www.gmail.com\fahimullahkamal@gmail.com">fahimullahkamal@gmail.com</a><br>Kabul,Afghanistan</p>
+        </span>
+        <section>
+            <div></div>
+            <img id="img1" src="./image/1.jpg" alt="">
+            <img id="img2" src="./image/exam.jpeg" alt="">
+        </section>
+    </footer>
+</body>
+</html>
